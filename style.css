@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 28, 28);
+    flex-direction: column;
+    color: aliceblue;
+}
+
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.item {
+    border: solid black 1px;
+    color: black;
+}
+
+.item:hover {
+    background-color: rgb(221, 218, 218);
+    cursor: pointer;
+}
+
+button {
+    margin: 50px;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 3em;
+}

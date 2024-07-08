@@ -27,5 +27,4 @@ const playerFactory = (marker) => {
     const hey = () => console.log(marker);
     return {marker, hey};
 }
-
 const boy = playerFactory(this.marker);

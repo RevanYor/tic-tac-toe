@@ -17,11 +17,14 @@ oMarker.addEventListener('click', () => {
     console.log(mark);
 })
 
-let box = document.querySelectorAll('.item');
-
-box.forEach(box.addEventListener('click', () => {
-    box.innerText = mark;
-}));
+const boxes = document.querySelectorAll('.item');
+        boxes.forEach(box => {
+            box.addEventListener('click', () => {
+                if (box.innerText === '') { // Prevent overwriting marks
+                    box.innerText = mark;
+                }
+            });
+        });
 
 const playerFactory = (marker) => {
     const hey = () => console.log(marker);

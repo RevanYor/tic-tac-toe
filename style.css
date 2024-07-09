@@ -19,6 +19,10 @@ body {
 .item {
     border: solid black 1px;
     color: black;
+    font-size: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .item:hover {

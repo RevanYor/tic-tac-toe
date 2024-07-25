@@ -2,11 +2,10 @@ let gameboard = {
     gameBoard: []
 };
 
-let mark = '';
-
 //Markers
 let xMarker = document.querySelector('#xmarker');
 let oMarker = document.querySelector('#omarker');
+let mark = '';
 
 xMarker.addEventListener('click', () => {
     mark = xMarker.innerText;

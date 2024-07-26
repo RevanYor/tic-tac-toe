@@ -13,7 +13,6 @@ xMarker.addEventListener('click', () => {
 
 oMarker.addEventListener('click', () => {
     mark = oMarker.innerText;
-    console.log(mark);
 })
 
 const boxes = document.querySelectorAll('.item');
@@ -29,4 +28,3 @@ const playerFactory = (marker) => {
     const hey = () => console.log(marker);
     return {marker, hey};
 }
-const boy = playerFactory(this.marker);
